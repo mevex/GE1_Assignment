@@ -5,7 +5,7 @@ Games Engines 1 Assignment - Enzo Valentino Cristofaro D19123746
 The project consists of a "The Binding of Isaac" dungeon style generator. Basically, the dungeon will be made out of tile-based rooms that are going to be procedurally generated using multiple layers of Perlin noise for the floor and the obstacles inside the room.
 There will also be enemies with different behaviours and simple AI.
 
-##Resources
+## Resources
 * TheHappieCat -  How Procedurally Generated Terrain Works
 ⋅⋅⋅[![YouTube](http://img.youtube.com/vi/JdYkcrW8FBg/0.jpg)](https://www.youtube.com/watch?v=JdYkcrW8FBg)
 
@@ -18,7 +18,7 @@ There will also be enemies with different behaviours and simple AI.
 
 * [This free book about procedural generation](https://www.docdroid.net/zReQS98/output.pdf)
 
-##Inspiration
+## Inspiration
 * [The Binding of Isaac game](https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/)
 
 _This readme is going to be updated over time_
