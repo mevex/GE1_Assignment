@@ -72,35 +72,6 @@ public class RoomSpawner : MonoBehaviour
     {
         if(other.CompareTag("SpawnPoint"))
         {
-            //Debug.Log("Collided");
-            /*if (other.CompareTag("SpawnPoint"))
-            {
-                RoomSpawner otherSpawner = other.gameObject.GetComponent<RoomSpawner>();
-                if (!otherSpawner.spawn)
-                {
-                    if ((openingDirections == Directions.right && otherSpawner.openingDirections == Directions.bottom)
-                        || (openingDirections == Directions.bottom && otherSpawner.openingDirections == Directions.right))
-                    {
-                        Instantiate(rooms.RB, transform.position, Quaternion.identity);
-                    }
-                    else if ((openingDirections == Directions.bottom && otherSpawner.openingDirections == Directions.left)
-                        || (openingDirections == Directions.left && otherSpawner.openingDirections == Directions.bottom))
-                    {
-                        Instantiate(rooms.BL, transform.position, Quaternion.identity);
-                    }
-                    else if ((openingDirections == Directions.left && otherSpawner.openingDirections == Directions.top)
-                        || (openingDirections == Directions.top && otherSpawner.openingDirections == Directions.left))
-                    {
-                        Instantiate(rooms.LT, transform.position, Quaternion.identity);
-                    }
-                    else
-                    {
-                        Instantiate(rooms.RT, transform.position, Quaternion.identity);
-                    }
-
-                    Debug.Log("ROOM");
-                }
-            }*/
             spawn = false;
         }
     }

@@ -14,7 +14,19 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, 0, Input.GetAxis("Vertical") * Time.deltaTime * speed);
-        transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * speed, 0, 0);
+        float z = Input.GetAxis("Vertical") * Time.deltaTime * speed;
+        float x = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+        
+        Vector3 origin = new Vector3(x, 0, z).normalized * 0.7f + new Vector3(0, 10, 0) + transform.position;
+        RaycastHit info = new RaycastHit();
+        Physics.Raycast(origin, Vector3.down, out info, 20.0f);
+        //Debug.Log(info.transform.name);
+        //Debug.DrawRay(origin, Vector3.down*20, Color.black);
+
+        if(info.transform.name == "Floor(Clone)")
+        {
+            transform.Translate(0, 0, z);
+            transform.Translate(x, 0, 0);
+        }
     }
 }
