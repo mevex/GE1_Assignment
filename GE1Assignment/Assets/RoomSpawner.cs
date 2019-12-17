@@ -13,13 +13,19 @@ public enum Directions
 public class RoomSpawner : MonoBehaviour
 {
     public Directions openingDirections;
+    public bool spawn = true;
     private RoomsContainer rooms;
-    private bool spawn = true;
 
     void Start()
     {
-        rooms = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomsContainer>();
+        rooms = GameObject.FindGameObjectWithTag("RoomsContainer").GetComponent<RoomsContainer>();
         Invoke("Spawn", 0.2f);
+    }
+
+    private void Update()
+    {
+        if(spawn)
+            Invoke("Spawn", 0.5f);
     }
 
     // Update is called once per frame
@@ -66,7 +72,35 @@ public class RoomSpawner : MonoBehaviour
     {
         if(other.CompareTag("SpawnPoint"))
         {
-            Debug.Log("Collided");
+            //Debug.Log("Collided");
+            /*if (other.CompareTag("SpawnPoint"))
+            {
+                RoomSpawner otherSpawner = other.gameObject.GetComponent<RoomSpawner>();
+                if (!otherSpawner.spawn)
+                {
+                    if ((openingDirections == Directions.right && otherSpawner.openingDirections == Directions.bottom)
+                        || (openingDirections == Directions.bottom && otherSpawner.openingDirections == Directions.right))
+                    {
+                        Instantiate(rooms.RB, transform.position, Quaternion.identity);
+                    }
+                    else if ((openingDirections == Directions.bottom && otherSpawner.openingDirections == Directions.left)
+                        || (openingDirections == Directions.left && otherSpawner.openingDirections == Directions.bottom))
+                    {
+                        Instantiate(rooms.BL, transform.position, Quaternion.identity);
+                    }
+                    else if ((openingDirections == Directions.left && otherSpawner.openingDirections == Directions.top)
+                        || (openingDirections == Directions.top && otherSpawner.openingDirections == Directions.left))
+                    {
+                        Instantiate(rooms.LT, transform.position, Quaternion.identity);
+                    }
+                    else
+                    {
+                        Instantiate(rooms.RT, transform.position, Quaternion.identity);
+                    }
+
+                    Debug.Log("ROOM");
+                }
+            }*/
             spawn = false;
         }
     }
