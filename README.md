@@ -6,11 +6,14 @@ The project consists of a "The Binding of Isaac" dungeon style generator. Basica
 There will also be enemies with different behaviours and simple AI.
 
 ## Resources
-* TheHappieCat -  How Procedurally Generated Terrain Works
+* TheHappieCat - How Procedurally Generated Terrain Works
 ⋅⋅⋅[![YouTube](http://img.youtube.com/vi/JdYkcrW8FBg/0.jpg)](https://www.youtube.com/watch?v=JdYkcrW8FBg)
 
 * GDC conference by Kate Compton - Practical Procedural Generation for Everyone
 ⋅⋅⋅[![YouTube](http://img.youtube.com/vi/WumyfLEa6bU/0.jpg)](https://www.youtube.com/watch?v=WumyfLEa6bU)
+
+* Blackthornprod - RANDOM DUNGEON GENERATOR - EASY UNITY TUTORIAL
+⋅⋅⋅[![YouTube](http://img.youtube.com/vi/qAf9axsyijY/0.jpg)](https://www.youtube.com/watch?v=qAf9axsyijY&list=PLBIb_auVtBwA-qr2-WnWX0LjZXkqKu5Aj)
 
 * [Kate Compton - So you want to build a generator…](https://galaxykate0.tumblr.com/post/139774965871/so-you-want-to-build-a-generator)
 
