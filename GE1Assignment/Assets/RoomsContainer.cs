@@ -10,4 +10,6 @@ public class RoomsContainer : MonoBehaviour
     public GameObject[] topRooms;
 
     public GameObject closedRoom;
+
+    public static RoomsContainer rooms;
 }

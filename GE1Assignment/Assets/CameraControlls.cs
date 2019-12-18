@@ -38,14 +38,14 @@ public class CameraControlls : MonoBehaviour
         }
 
         if(player.position.x < 0)
-            playerX = (int)((player.position.x - 5) / 10);
+            playerX = (int)((player.position.x - roomWidth / 2) / roomWidth);
         else
-            playerX = (int)((player.position.x + 5) / 10);
+            playerX = (int)((player.position.x + roomWidth / 2) / roomWidth);
 
         if (player.position.z < 0)
-            playerZ = (int)((player.position.z - 5) / 10);
+            playerZ = (int)((player.position.z - roomHeight / 2) / roomHeight);
         else
-            playerZ = (int)((player.position.z + 5) / 10);
+            playerZ = (int)((player.position.z + roomHeight / 2) / roomHeight);
 
         transform.position = new Vector3(playerX*roomWidth, transform.position.y, playerZ*roomHeight);
     }
